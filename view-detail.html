@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<div class="from-group">
+    <img class="img-responsive" src="http://static.vecteezy.com/system/resources/previews/000/115/992/original/free-team-work-illustration-vectors.jpg" />
+</div>
+<div class="form-group">
+  <h5><label for="txtMember" class="label label-success">Member Name :</label></h5>
+  <input type="text" id="txtMember" class="form-control" ng-model="item.teamMember"/>
+</div>
+<div class="form-group">
+  <h5><label for="txtTask" class="label label-success">Task :</label></h5>
+  <input type="text" id="txtTask" class="form-control" ng-model="item.task"/>
+</div>
+<div class="form-group">
+  <h5><label for="cbStatus" class="label label-success">Status :</label></h5>
+  <select name="cbStatus" id="cbStatus" class="form-control" ng-model="item.status">
+    <option value="To Do">To Do</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Done">Done</option>
+  </select>
+</div>
+<div class="form-group">
+  <button class="btn btn-primary" ng-click="save()">Save</button>
+  <button class="btn btn-primary" ng-click="cancel()">Cancel</button>
+  <button class="btn btn-warning" ng-click="delete()">Delete</button>
+</div>
